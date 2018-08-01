@@ -48,9 +48,13 @@ import com.nibble.starfood.webservices.model.FeedBack;
 import com.nibble.starfood.webservices.model.FeedBackSend;
 import com.nibble.starfood.webservices.model.FoodCat;
 
-
-@Repository
 public class CustDetDAOImpl implements CustDetDAOI {
+public static final java.lang.String LAT1135798="lat";
+
+//public class CustDetDAOImpl implements CustDetDAOI {
+public static final java.lang.String CUSTID1135956="custId";
+@Repository
+//public class CustDetDAOImpl implements CustDetDAOI {
 	
 	@Autowired
 	private SessionFactory sessionF;
@@ -448,7 +452,7 @@ public class CustDetDAOImpl implements CustDetDAOI {
 					.projectionList()
 						.add(Projections.property("areaDesc"),
 							"areaDesc")
-					.add(Projections.property("lat"),
+					.add(Projections.property(LAT1135798),// This is updated by VioFixer for 'String literals should not be duplicated
 							"lat")
 					.add(Projections.property("longt"),
 							"longt")
@@ -608,7 +612,7 @@ public class CustDetDAOImpl implements CustDetDAOI {
 	{
 		final Session session = sessionF.getCurrentSession();
 		final Query query = session.createQuery("From Address where custDetId=:custId and actAddrFlg=:activeAddrFlg");
-		query.setParameter("custId", id);
+		query.setParameter(CUSTID1135956, id);// This is updated by VioFixer for 'String literals should not be duplicated
 		query.setParameter("activeAddrFlg",1);
 		return query.list();
 	}

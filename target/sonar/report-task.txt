@@ -1,0 +1,6 @@
+projectKey=com.nibble:starfood
+serverUrl=http://localhost:9000
+serverVersion=6.7.4.38452
+dashboardUrl=http://localhost:9000/dashboard/index/com.nibble:starfood
+ceTaskId=AWTz4Z3HuSVw-zoIkO8k
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWTz4Z3HuSVw-zoIkO8k

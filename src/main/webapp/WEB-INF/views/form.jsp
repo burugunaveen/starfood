@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<FORM NAME='TESTFORM' ACTION='mobile/paytmmobile'
+METHOD='POST'>
+        <INPUT TYPE='HIDDEN' NAME='MID' VALUE='Nibble15975321633919'
+> <INPUT TYPE='HIDDEN' NAME='ORDERID' VALUE='58' ><INPUT TYPE='HIDDEN' NAME='TXNAMOUNT' VALUE='1.00' ><INPUT TYPE='HIDDEN' NAME='CURRENCY' VALUE='INR'
+> <INPUT TYPE='HIDDEN' NAME='TXNID' VALUE='99107' ><INPUT TYPE='HIDDEN'
+NAME='BANKTXNID' VALUE='201503280488460' ><INPUT TYPE='HIDDEN' NAME='STATUS'
+VALUE='TXN_SUCCESS' ><INPUT TYPE='HIDDEN' NAME='RESPCODE' VALUE='01'
+> <INPUT TYPE='HIDDEN' NAME='RESPMSG' VALUE='Txn Successful.' ><INPUT
+TYPE='HIDDEN' NAME='TXNDATE' VALUE='2015-03-28 13:02:35.0' ><INPUT
+TYPE='HIDDEN' NAME='GATEWAYNAME' VALUE='ICICI' ><INPUT TYPE='HIDDEN' NAME='BANKNAME' VALUE='CITIBank' ><INPUT TYPE='HIDDEN' NAME='PAYMENTMODE'
+VALUE='DC' ><INPUT TYPE='HIDDEN' NAME='CHECKSUMHASH'
+VALUE='i8bmRxo9rm0tnkxAkQRf9vq3lZyb+MwtWVWD7Cqz71Dyyzo4VIeHi00cMiYVuCoLLS311BahFKGEd9l3V1yn7/kiUr5wvs/L/ffBE8KP2kY='>
+<input type="submit"/>
+</FORM>
+
+</body>
+</html>

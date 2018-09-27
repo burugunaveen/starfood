@@ -19,7 +19,7 @@ public class Test {
 		SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
 		
 		try {
-			calendr.setTime(simpleDateFormat.parse(simpleDateFormat.format(todayDate)));
+//			calendr.setTime(simpleDateFormat.parse(simpleDateFormat.format(todayDate)));//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}

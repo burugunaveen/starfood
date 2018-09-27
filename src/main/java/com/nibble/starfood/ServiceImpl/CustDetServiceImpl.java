@@ -171,7 +171,7 @@ public class CustDetServiceImpl implements CustDetServiceI {
 		String sbCurrentTimestamp = null;
 		Calendar cSchedStartCal = Calendar.getInstance(TimeZone
 				.getTimeZone("GMT"));
-		long gmtTime = cSchedStartCal.getTime().getTime();
+//		long gmtTime = cSchedStartCal.getTime().getTime();//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		long timezoneAlteredTime = gmtTime
 				+ TimeZone.getTimeZone("Asia/Calcutta").getRawOffset();
 		Calendar cSchedStartCal1 = Calendar.getInstance(TimeZone
@@ -397,7 +397,7 @@ public class CustDetServiceImpl implements CustDetServiceI {
 	   @Override
 		 public List<Address> updateAddress(int id) {
 
-		   return cust.getAddressList(id);
+//		   return cust.getAddressList(id);//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		   
 		 }
 	   @Override

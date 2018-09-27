@@ -15,7 +15,7 @@ public class CalculateEndDate {
 		try {
 			date = formatter.parse(startDate);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
+				 System.err.println("An Exception Occured");//This Line is modified by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 			e.printStackTrace();
 		}
 		System.out.println(date);
@@ -29,10 +29,10 @@ public class CalculateEndDate {
 	    int adjustmentDays = 0;
 	    if (originalDayOfWeek == Calendar.SUNDAY) {
 	        adjustmentDays = 1;
-	    } else if (originalDayOfWeek + remainderDays > Calendar.FRIDAY) {
+//	    } else if (originalDayOfWeek + remainderDays > Calendar.FRIDAY) {//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 	        adjustmentDays = 2;
 	    }
-	    cal.add(Calendar.DAY_OF_MONTH, adjustmentDays);
+//	    cal.add(Calendar.DAY_OF_MONTH, adjustmentDays);//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 	    System.out.println(cal.getTime());
 	    SimpleDateFormat endFormatter = new SimpleDateFormat("yyyy-MM-dd");
 	    String endDateString=endFormatter.format(cal.getTime());

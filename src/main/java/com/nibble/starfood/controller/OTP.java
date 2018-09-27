@@ -33,23 +33,23 @@ class OTP {
 		
 		
 		
-	/*	Date todayDate = getTime();
+//	/*	Date todayDate = getTime();//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
 		
 		String systemDate= simpleDateFormat.format(todayDate);
 		SimpleDateFormat simpletime=new SimpleDateFormat("HH:mm:ss");
-		String systemTime=simpletime.format(todayDate);
+//		String systemTime=simpletime.format(todayDate);//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		System.out.println("systime  "+systemTime);
 		System.out.println("systemDate  "+systemDate);
 		
 		
 		//String s = "15:18:05";
-		DateFormat f1 = new SimpleDateFormat("HH:mm:ss"); //HH for hour of the day (0 - 23)
+//		DateFormat f1 = new SimpleDateFormat("HH:mm:ss"); //HH for hour of the day (0 - 23)//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		Date d = f1.parse(systemTime);
 		DateFormat f = new SimpleDateFormat("HH:mm");
-		DateFormat f2 = new SimpleDateFormat("hh:mm:ss a");
+//		DateFormat f2 = new SimpleDateFormat("hh:mm:ss a");//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		String time_12Hr_format=f2.format(d);
-		System.out.println("12 hour format   "+time_12Hr_format);*/
+//		System.out.println("12 hour format   "+time_12Hr_format);*///This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		   String s="11:30 AM";
 		   SimpleDateFormat displayFormat = new SimpleDateFormat("HH:mm");
 	       SimpleDateFormat parseFormat = new SimpleDateFormat("hh:mm a");

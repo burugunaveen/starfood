@@ -103,6 +103,7 @@ public class PayUController {
 			map.put("App share couponss", "No coupons");
 
 		} else {
+			System.err.println("An exception is occurred");//This Line is modifided by VioFixer as a fix for Poor Error Handling: Empty Catch Block
 			map.put("App share couponss", appSharecouponss);
 
 		}

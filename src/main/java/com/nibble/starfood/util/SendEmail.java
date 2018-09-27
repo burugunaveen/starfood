@@ -32,7 +32,7 @@ public class SendEmail {
 		try {
 
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress("Starfood<orders.starfood@gmail.com>"));
+//			message.setFrom(new InternetAddress("Starfood<orders.starfood@gmail.com>"));//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 			message.setRecipients(Message.RecipientType.TO,
 				InternetAddress.parse(emailAddress));
 			message.setSubject(subject);

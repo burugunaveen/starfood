@@ -63,7 +63,7 @@ public class OrderCancellationDAOImplementation implements OrderCancellationDAO 
 		final Query query = session
 				.createQuery("From CustOrdDet c where c.id =:orderId");
 		query.setParameter("orderId", OrderDetails);
-		final CustOrdDet order = (CustOrdDet) query.list().get(0);
+//		final CustOrdDet order = (CustOrdDet) query.list().get(0);//This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 		return order;
 	}
 

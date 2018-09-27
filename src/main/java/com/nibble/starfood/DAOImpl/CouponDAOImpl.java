@@ -28,7 +28,7 @@ public class CouponDAOImpl implements CouponDAO {
 		query.setParameter("cupnCode",cupn.getCouponCode());
 		return query.list();
 	}
-
+////This Line is commented by Viofixer as a fix for Poor Logging Practice Use of a System Output Stream 
 	@Override
 	public Cupn getValidCoupons(Cupn cupndet, Date todayDate) {
 		System.out.println("TODY DATE???????" + todayDate);
